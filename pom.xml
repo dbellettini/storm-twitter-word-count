@@ -8,13 +8,13 @@
   <name>Storm Twitter Word Count sample</name>
   <url>http://kaviddiss.com</url>
 
-  <dependencies>       
+  <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.6.6</version>
     </dependency>
-    <dependency> 
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.6.6</version>
@@ -42,7 +42,7 @@
     <dependency>
       <groupId>storm</groupId>
       <artifactId>storm</artifactId>
-	    <version>0.8.1</version>
+      <version>0.8.1</version>
     </dependency>
   </dependencies>
 
@@ -56,15 +56,15 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-	  <plugin>
-	    <groupId>org.codehaus.mojo</groupId>
-	    <artifactId>exec-maven-plugin</artifactId>
-	    <version>1.2.1</version>
-	    <configuration>
-	      <mainClass>org.dvto.storm.Topology</mainClass>
-	  	  <classpathScope>compile</classpathScope>
-	    </configuration>
-	  </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <configuration>
+          <mainClass>org.dvto.storm.Topology</mainClass>
+          <classpathScope>compile</classpathScope>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
@@ -84,4 +84,3 @@
   </repositories>
 
 </project>
-
